@@ -1,0 +1,45 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.heading {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.moveAllBtn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.moveAllBtn:hover {
+  opacity: 0.9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.status,
+.empty {
+  text-align: center;
+  padding: 60px;
+  color: #666;
+}

@@ -1,0 +1,13 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.status {
+  text-align: center;
+  padding: 40px;
+  color: #000;
+  font-size: 2rem;
+}

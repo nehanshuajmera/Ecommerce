@@ -1,0 +1,175 @@
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 64px 80px 0;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr 1.3fr;
+  gap: 32px;
+  padding-bottom: 64px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.subscribe {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
+.subscribeText {
+  font-size: 1.2rem;
+  margin: 0 0 16px;
+  color: #ddd;
+}
+
+.emailForm {
+  display: flex;
+  align-items: center;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.emailInput {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2rem;
+  flex: 1;
+}
+
+.emailInput::placeholder {
+  color: #999;
+}
+
+.sendBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 24px;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin: 0 0 14px;
+  line-height: 1.4;
+}
+
+.linkList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.link {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.appText {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin: 0 0 16px;
+}
+
+.appRow {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.qrBox {
+  width: 56px;
+  height: 56px;
+}
+
+.qrbox img {
+  width: 100%;
+  height: 100%;
+}
+
+.storeBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.storeBtn {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 4px 10px;
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.storeBtnSmall {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.storeBtnBig {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+}
+
+.iconLink {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.iconLink:hover {
+  color: #ccc;
+}
+
+.bottomBar {
+  border-top: 1px solid #2a2a2a;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  color: #777;
+  margin: 0;
+}

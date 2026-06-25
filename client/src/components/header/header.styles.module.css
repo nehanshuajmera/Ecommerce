@@ -1,0 +1,124 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  padding: 1rem 2rem;
+  font-weight: 500;
+}
+
+.logo a {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav {
+  padding: 1rem;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+}
+
+.linkActive {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.signoutBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  color: #000;
+  padding: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.searchBar {
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid #555;
+}
+
+.searchBar input {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: #f1f1f1;
+}
+
+.iconBtn {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  margin: 0 0.5rem;
+  color: inherit;
+  font-size: 1rem;
+}
+
+.iconBtn:hover {
+  opacity: 0.7;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: #db4444;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3px;
+  line-height: 1;
+}

@@ -1,0 +1,618 @@
+.page {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+/* ── Eyebrow ── */
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.eyebrowBar {
+  display: inline-block;
+  width: 16px;
+  height: 36px;
+  background: #db4444;
+  border-radius: 4px;
+}
+
+.eyebrowText {
+  color: #db4444;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* ── Section shared ── */
+.section {
+  margin: 3.5rem 0;
+}
+
+.sectionHead {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  color: #000;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 0;
+}
+
+/* ── Arrows ── */
+.arrows {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.arrowBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.arrowBtn:hover {
+  background: #db4444;
+  color: #fff;
+}
+
+/* ── Hero ── */
+.hero {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 0;
+  margin: 2rem 0 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar {
+  border-right: 1px solid #e0e0e0;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.sidebarItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.55rem 1.5rem 0.55rem 0;
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.sidebarItem:hover {
+  color: #db4444;
+}
+
+.bannerSlide {
+  background: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 2rem 2.5rem 4rem;
+  overflow: hidden;
+  min-height: 50%;
+}
+
+.bannerText {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.bannerBrand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.85;
+}
+
+.bannerHeading {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 2rem;
+}
+
+.bannerCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
+  font-size: 1.2rem;
+}
+
+.bannerImg {
+  position: absolute;
+  right: 4rem;
+  bottom: 0;
+  height: 90%;
+  object-fit: contain;
+}
+
+.bannerDots {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.4rem;
+}
+
+.bannerDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.bannerDotActive {
+  background: #fff;
+}
+
+/* ── Countdown ── */
+.countdown {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+.countUnit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.countLabel {
+  font-size: .8rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.countVal {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  line-height: 1;
+}
+
+/* ── Scroll row (flash sales) ── */
+.scrollRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 0.5rem;
+}
+
+.scrollRow>div>*:nth-child(n+9) {
+  display: none !important;
+}
+
+.scrollRow::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollItem {
+  flex: 0 0 220px;
+}
+
+/* ── View all ── */
+.viewAllWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.viewAllBtn {
+  background: #db4444;
+  color: #fff;
+  padding: 1.2rem 3rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.viewAllBtn:hover {
+  background: #c03333;
+}
+
+.viewAllBtnSmall {
+  margin-left: auto;
+  background: #db4444;
+  color: #fff;
+  padding: 0.85em 1.85rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* ── Category row ── */
+.categoryRow {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.categoryRow::-webkit-scrollbar {
+  display: none;
+}
+
+.categoryCard {
+  flex: 0 0 160px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  text-decoration: none;
+  color: #000;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.categoryCard:nth-child(4) {
+  background: #db4444;
+  color: #fff;
+}
+
+.categoryCard:hover {
+  background: #db4444;
+  color: #fff;
+  border-color: #db4444;
+}
+
+.categoryImg {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.categoryLabel {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* ── Grids ── */
+/* .grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+} */
+
+.grid4 > div > *:nth-child(-n+8) {
+  display: none !important;
+}
+
+.grid4 > div  >*:nth-child(n+13) {
+  display: none !important;
+}
+
+.grid8 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.grid8 > div > *:nth-child(-n+12) {
+  display: none !important;
+}
+
+
+/* ── Music banner ── */
+.musicBanner {
+  background: #000;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 4rem;
+  margin: 3.5rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.musicContent {
+  color: #fff;
+  z-index: 2;
+}
+
+.musicEyebrow {
+  color: #00ff66;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+}
+
+.musicTitle {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 2rem;
+}
+
+.musicCountdown {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.musicUnit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  justify-content: center;
+  gap: 0;
+}
+
+.musicVal {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 1.4rem;
+}
+
+.musicLabel {
+  font-size: 1rem;
+  color: #555;
+}
+
+.musicCta {
+  display: inline-block;
+  background: #00ff66;
+  color: #000;
+  padding: 0.7rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.musicImg {
+  height: 280px;
+  object-fit: contain;
+  position: absolute;
+  right: 4rem;
+}
+
+/* ── New Arrival ── */
+.arrivalGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.arrivalMain {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+.arrivalMain img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.85;
+}
+
+.arrivalRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.arrivalTop {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #1a1a1a;
+  flex: 1;
+}
+
+.arrivalTop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.75;
+}
+
+.arrivalBottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.arrivalSmall {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+.arrivalSmall img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  opacity: 0.75;
+}
+
+.arrivalOverlay {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  color: #fff;
+}
+
+.arrivalOverlay h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+}
+
+.arrivalOverlay p {
+  font-size: 0.8rem;
+  margin: 0 0 0.75rem;
+  opacity: 0.85;
+  max-width: 200px;
+}
+
+.arrivalOverlay a {
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1px;
+}
+
+/* ── Perks ── */
+.perks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 4rem;
+  border-top: 1px solid #e0e0e0;
+  margin-bottom: 3rem;
+}
+
+.perkItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.perkIcon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  border: 8px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.perkLabel {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin: 0;
+  color: #000;
+}
+
+.perkSub {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+
+  .grid4,
+  .grid8 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .musicBanner {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem;
+  }
+
+  .musicImg {
+    position: static;
+    height: 180px;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .grid4,
+  .grid8 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .arrivalGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .arrivalBottom {
+    grid-template-columns: 1fr;
+  }
+
+  .perks {
+    grid-template-columns: 1fr;
+  }
+
+  .countdown {
+    gap: 0.75rem;
+  }
+
+  .countVal {
+    font-size: 1.4rem;
+  }
+}
