@@ -11,7 +11,7 @@ import { cartRoutes } from './routes/cartRoutes.js';
 import { wishlistRoutes } from './routes/wishlistRoutes.js';
 import { errorHandler } from './middlewares/errorHandler.js';
 
-const REQUIRED_ENV_VARS = ['PORT', 'MONGO_DB', 'JWT_SECRET'];
+const REQUIRED_ENV_VARS = ['MONGO_DB', 'JWT_SECRET'];
 for (const key of REQUIRED_ENV_VARS) {
   if (!process.env[key]) {
     throw new Error(`Missing required environment variable: ${key}`);
@@ -19,26 +19,24 @@ for (const key of REQUIRED_ENV_VARS) {
 }
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 const { CORS_ORIGIN, CORS_METHODS, CORS_CREDENTIALS, CORS_HEADERS } =
   process.env;
 
 const corsOptions = {
-  origin: CORS_ORIGIN ? CORS_ORIGIN.split(',') : [],
-  methods: CORS_METHODS ? CORS_METHODS.split(',') : ['GET', 'POST'],
+  origin: CORS_ORIGIN ? CORS_ORIGIN.split(',').map((o) => o.trim()) : [],
+  methods: CORS_METHODS
+    ? CORS_METHODS.split(',')
+    : ['GET', 'POST', 'PATCH', 'DELETE'],
   credentials: CORS_CREDENTIALS === 'true',
   allowedHeaders: CORS_HEADERS ? CORS_HEADERS.split(',') : ['Content-Type'],
   optionsSuccessStatus: 200,
 };
 
-// middlewares
-app.use(express.json());
 app.use(cors(corsOptions));
+app.use(express.json());
 app.use(cookieParser());
 
-// routes
-
-// health check
 app.get('/', (req, res) => {
   res.send('Backend Working, Happy Coding!');
 });
@@ -48,7 +46,6 @@ app.use('/api/products', productRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api/wishlist', wishlistRoutes);
 
-// error handler
 app.use(errorHandler);
 
 const start = async () => {
